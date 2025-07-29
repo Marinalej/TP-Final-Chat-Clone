@@ -7,7 +7,7 @@ const Message = ({emisor, hora,texto, status, id,onDeleteMessage}) => {
             <div className='message-time'>
               {hora}
               {emisor === 'YO' && (
-              <button onClick={() => {onDeleteMessage(id)}} className='btn-trsh'>
+              <button onClick={() => {onDeleteMessage(id)}} className='btn-trash'>
                  <i class="bi bi-trash"></i>
               </button> 
               )}

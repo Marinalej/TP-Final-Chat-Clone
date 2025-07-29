@@ -134,7 +134,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70px;
+  width: 100px; 
+  padding: 30px 0;
   background-color:var(--color-principal-300);
   padding: 20px 0;
   justify-content: space-between;
@@ -205,12 +206,12 @@ body{
   margin-top: 10px;
 }
 .bi-chat-left{
-width: 46px;
-height: auto;
+  width: 46px;
+  height: auto;
 }
 .bi-three-dots-vertical{
-width: 40px;
-height: auto;
+  width: 40px;
+  height: auto;
 }
 .chat-seek{
   display: flex;
@@ -434,7 +435,7 @@ height: auto;
 }
 .btn-trash{
   border: none;
-  background-color: var(--color-principal-100);
+  background-color: transparent;
   color: var(--color-principal-700);
 }
 .message-form {
@@ -492,6 +493,9 @@ height: auto;
     width: 100%; 
   }
   .contact-last-message{
+    display: none;
+  }
+  .contact-last-seen{
     display: none;
   }
   .chat-screen {
@@ -564,6 +568,10 @@ height: auto;
 
 
 @media screen and (max-width: 780px) {
+  .bi-chat-left,
+  .bi-three-dots-vertical {
+    display: none;
+  }
   .contact-avatar {
     width: 50px;
   }
@@ -573,6 +581,9 @@ height: auto;
   .contact-info {
     justify-content: flex-start;
     padding-right: 20px;
+  }
+  .contact-last-seen{
+    display: none;
   }
   
   .bi-search-heart {
