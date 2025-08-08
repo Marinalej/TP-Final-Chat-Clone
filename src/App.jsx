@@ -15,7 +15,7 @@ const App = () => {
   }
   
   return (
-    <div className={'App-container ' + app_theme + '-theme'}>  
+    <div className={'App-container ' + app_theme + '-theme'}onClick={handleChatScreenClose}>  
       <Header/>
       <div className='main-content'>
         <Sidebar/>

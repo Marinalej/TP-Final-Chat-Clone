@@ -8,8 +8,11 @@ const ContactList = ({ contacts }) => {
   const navigate = useNavigate()
 
   const handleContactClick = (contactId) => {
-    navigate(`/contact/${contactId}/messages`)
-  }
+  navigate(`/contact/${contactId}/messages`)
+  const chatScreen = document.querySelector(`.chat-screen-${contactId}`)
+  chatScreen.classList.add('active')
+  document.querySelector('.contact-screen-container').classList.add('hidden')
+}
   return (
     <div className="contact-list-container">
       <div className="contact-list-header">
