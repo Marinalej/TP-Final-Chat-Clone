@@ -8,7 +8,11 @@ import { AppThemeContext } from './Contexto/AppThemeContext'
 import { Sidebar } from './Components/Sidebar/Sidebar'
 
 const App = () => {
-  const { app_theme } = useContext(AppThemeContext);
+  const { app_theme } = useContext(AppThemeContext)
+  const handleChatScreenClose = () => {
+    const chatScreen = document.querySelector('.chat-screen')
+    chatScreen.classList.remove('active')
+  }
   
   return (
     <div className={'App-container ' + app_theme + '-theme'}>  

@@ -61,7 +61,7 @@ const ChatScreen = () => {
         }
  
         return (
-    <div className="chat-screen">
+    <div className="chat-screen-${contact_id}">
       <header className="chat-header">
         
         <div className="contact-info">
