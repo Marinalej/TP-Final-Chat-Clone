@@ -484,7 +484,7 @@ body{
 }
 
 
-@media screen and (max-width: 320px) {
+ @media screen and (max-width: 480px) {
   .sidebar {
     display: none; 
   }
@@ -565,7 +565,7 @@ body{
   
   
 }
-
+ 
 
 @media screen and (max-width: 780px) {
   .bi-chat-left,
