@@ -491,7 +491,7 @@ body{
   }
   
   .contact-screen-container {
-    display: none;
+    width: 100%; 
   }
 
   
