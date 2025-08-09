@@ -484,34 +484,61 @@ body{
 }
 
 
- @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+ 
   .sidebar {
     display: none; 
   }
   
   .contact-screen-container {
-    width: 100%; 
-  }
-  .contact-last-message{
     display: none;
   }
-  .contact-last-seen{
+
+  
+  .contact-list-header {
+    height: 70px;
+  }
+  
+  .contact-list-title {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  
+  .contact-item {
+    padding: 8px 5px;
+  }
+  
+  .contact-avatar {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .contact-name {
+    font-size: 13px;
+  }
+  
+  .contact-last-message,
+  .contact-last-seen {
     display: none;
   }
+  
+  .chat-seek-input {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+ 
   .chat-screen {
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 0;  
     width: 100%;
     height: 100%;
-    transition: left 0.3s ease;
     z-index: 100;
+    background: var(--color-principal-100);
   }
-  
-  .chat-screen.active {
-    left: 0;
-  }
-  
+
+ 
   .header-logo {
     padding: 8px 5px;
   }
@@ -529,41 +556,34 @@ body{
     right: 10px;
     font-size: 12px;
   }
-  
-  .contact-list-header {
-    height: 70px;
-  }
-  
-  .contact-list-title {
-    font-size: 18px;
-    padding-left: 10px;
-  }
-  
-  .contact-avatar {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .contact-name {
-    font-size: 13px;
-  }
-  
-  .contact-last-message,
-  .contact-last-seen {
-    font-size: 11px;
-  }
-  
-  .chat-seek-input {
-    padding: 8px 10px;
-    font-size: 14px;
-  }
+
   
   .message-input {
     padding: 10px 15px;
     font-size: 14px;
   }
+
+ 
+  .message-bubble {
+    max-width: 80%;
+    padding: 8px 12px;
+  }
+
   
+  .back-button {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: var(--color-principal-700);
+    font-size: 20px;
+    z-index: 101;
+  }
   
+  .dark-theme .back-button {
+    color: var(--color-principal-500);
+  }
 }
  
 
